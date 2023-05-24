@@ -1,0 +1,65 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-y: hidden;
+    background-color: #2ec4b6;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 1em 3em;
+    color: #72efdd;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em #72efdd;
+    background-color: #00a6fb;
+    border: 0.25em solid #72efdd;
+    border-radius: 10em;
+    box-shadow: 0 0 1em#72efdd, 
+    0 0 4em 1em #00a6fb, 
+    inset 0 0 0.75em 0.25em #72efdd;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00a6fb;
+    filter: blur(25em);
+    opacity: 0.7;
+    pointer-events: none;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+a:hover {
+    color: black;
+}
+
+button:hover {
+    color: black;
+    background-color: #72efdd(119, 33, 199);
+    box-shadow: 0 0 1em 0.25em #00a6fb, 
+    0 0 4em #00a6fb, 
+    inset 0 0 0.75em 0.25em #00a6fb;
+}
+
+button:active {
+    box-sizing: 0 0 0.6em 0.25em #72efdd, 
+    0 0 02.5em 2em #00a6fb, 
+    inset 0 0 0.5em 0.25em #72efdd;
+}
